@@ -19,7 +19,7 @@ const BigLetters: React.FC<BigLettersProps> = ({
   playCardSounds,
 }) => {
   const answerLettersArray = answer.split("");
-  const contRef: RefObject<HTMLDivElement> = useRef(null);
+  const contRef: RefObject<HTMLDivElement | null> = useRef(null);
 
   /**
    * Animate the letters leaving the board

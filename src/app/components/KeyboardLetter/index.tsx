@@ -18,7 +18,7 @@ const KeyboardLetter: React.FC<KeyboardLetterProps> = ({
   playPoint2Sound,
   playPoint3Sound,
 }) => {
-  const scoreRef: RefObject<HTMLDivElement> = useRef(null);
+  const scoreRef: RefObject<HTMLDivElement | null> = useRef(null);
   const [getPreviousStatus, setPreviousStatus] = useState(LetterStatus.Unset);
   const [getScoreChangeAmount, setScoreChangeAmount] = useState<number>(0);
 

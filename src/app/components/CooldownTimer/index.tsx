@@ -7,7 +7,7 @@ type CooldownTimerProps = {
 };
 
 const CooldownTimer: React.FC<CooldownTimerProps> = ({ timeoutLength }) => {
-  const timerCircleRef: RefObject<HTMLDivElement> = useRef(null);
+  const timerCircleRef: RefObject<HTMLDivElement | null> = useRef(null);
 
   useEffect(() => {
     function startCooldownTimer() {

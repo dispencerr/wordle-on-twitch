@@ -109,9 +109,9 @@ const WordBlock: React.FC<WordBlockProps> = ({
   const wordLetterArray = word.split(""); // Array of each letter in the guess string
   const solveBonus = word.length; // Bonus points for solving the word
   const isCorrectAnswer = word === answer;
-  const wordContainerRef: RefObject<HTMLDivElement> = useRef(null);
-  const wordElementRef: RefObject<HTMLDivElement> = useRef(null);
-  const solveBonusRef: RefObject<HTMLDivElement> = useRef(null);
+  const wordContainerRef: RefObject<HTMLDivElement | null> = useRef(null);
+  const wordElementRef: RefObject<HTMLDivElement | null> = useRef(null);
+  const solveBonusRef: RefObject<HTMLDivElement | null> = useRef(null);
 
   /**
    * Compare the guessed word with the answer and adjust the statusArray based on whether each letter is in the answer and in the right place
