@@ -8,7 +8,7 @@
     "target": "es2017",
     "module": "commonjs",
     "strictNullChecks": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "lib": [
       "dom",
       "dom.iterable",
@@ -32,7 +32,8 @@
   },
   "include": [
     "**/*.ts",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"
