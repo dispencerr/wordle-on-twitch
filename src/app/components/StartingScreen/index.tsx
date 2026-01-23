@@ -36,7 +36,7 @@ const StartingScreen: React.FC<StartingScreenProps> = ({
    * When the connect button is clicked, call the function to connect to the channel that's entered
    */
   const handleButtonClick = () => {
-    connectToChannel(getChannel);
+    connectToChannel(getChannel.toLowerCase());
   };
 
   /**
