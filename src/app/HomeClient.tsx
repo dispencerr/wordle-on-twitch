@@ -77,7 +77,7 @@ export default function HomeClient() {
 
     if (channelParam) {
       setIsConnecting(true);
-      setChannel(channelParam);
+      setChannel(channelParam.toLowerCase());
     }
 
     setIsLoading(false);
